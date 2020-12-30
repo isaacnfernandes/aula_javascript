@@ -1,8 +1,32 @@
 function clicou(){
-	alert("Obrigado por clicar");
+	//alert("Obrigado por clicar");
+	document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar.</b>";
+	//console.log(document.getElementById("agradecimento"));
 }
 
+function redirecionar(){
+ 	window.open("https://www.devmedia.com.br/trabalhando-com-eventos-em-javascript/28521");
+ 	window.location.href = "https://www.devmedia.com.br/trabalhando-com-eventos-em-javascript/28521";
+}
 
+function trocar(elemento){
+	//document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+	//alert("Você passou o mouse aqui.");
+	elemento.innerHTML = "Obrigado por passar o mouse";
+}
+
+function voltar(elemento){
+	//document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+	elemento.innerHTML = "Passe o mouse aqui";
+}
+
+function carregarPagina(){
+	alert("Página carregada");
+}
+
+function funcaoChange(elemento){
+	console.log(elemento.value);
+}
 
 /*function soma(n1, n2){
 	return n1 + n2;
